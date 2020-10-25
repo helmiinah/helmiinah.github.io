@@ -73,10 +73,56 @@ diff file1 file2
 
 #### Week 5: Scripting and Configuration Files
 
+![mem](https://imgs.xkcd.com/comics/wanna_see_the_code.png)
+*Comic from [xkcd](https://xkcd.com/2138)*
 
+The goal of this week was to learn to write useful scripts and manipulate configuration files to make the command line environment more user-friendly. The idea behind script files is being able to combine several commands into one executable file. This can save a lot of time and effort when solving more complex tasks, which require several steps. Script files can take parameters that are given when executing the script. Let us look at the following script:
+
+```
+#!bin/bash
+
+# Adding all changes to git, adding them to a commit and pushing to origin
+# Required parameters are name of the commit and name of branch
+
+git add .
+git commit -m $1
+git push origin $2
+```
+
+Here we have a script that adds all changes to git, creates a commit with a message given as the first parameter, and finally pushing the commit to a remote origin to a branch, of which name is given as the second parameter. If the name of the script was push.sh, the script could be executed, for example, as follows:
+
+```
+bash push.sh "Initial commit" "cmdline-course"
+```
+
+This week, I found manipulating the .bashrc file to my liking extremely helpful. I was able to make my prompt look clean and appealing to the eye and determine several useful aliases, such as navigating to the directory of this course with the command `kik` and to the directory of this Github page with `io`. 
 
 #### Week 6: Installing and Running Programs
 
+On week 6 the goal was to get familiar with installing programs and Python packages in the command line and learn to write and use Makefiles.
+
+For my Ubuntu-environment, installing software is done using a package manager via the command `apt-get`. Package managers download all dependencies and packages needed for the software in question. For many installations, you will need to be the root user. Instead of actually logging in as the root user, it is recommended to execute such commands with `sudo`, which allows you to run commands as the root user from your current user. Installing a made-up software called `easyprogramming` as the root user in a Unix environment would look like this:
+
+```
+sudo apt-get install easyprogramming
+```
+
+Installing Python packages that do not come with the standard Python distribution is done using the command `pip`, which is a package manager for Python. Installing the helpful software NLTK (Natural Language Tool Kit) via pip looks like this:
+
+```
+pip install nltk
+```
+
+Lastly, I learned a completely new thing, which is the concept of Makefiles. I had never dealt with one before, and understanding the syntax took quite a bit of trial and error. Eventually, when I got the hang of it (somewhat), Makefiles seem a very helpful tool. The basic idea of Makefiles is that they are a type of file which can be executed with the program `make`. The file contains all necessary information for the `make`-program to create a working software or library. 
+
 #### Week 7: Git, Github, Version Control, and Jekyll
 
+For the final week, the theme was version control. I was already familiar with most of the topics this week, as I have used Git and Github before for my computer science studies. I had not, however, created a Github Pages website before, so it has been exciting to learn. For creating the site, we used the static site generator software Jekyll. Installing Jekyll and getting it to work how I wanted was quite a hassle, as it turned out my Ubuntu version (16.04) only supports ruby2.3, and what was needed is 2.5. After upgrading to Ubuntu 18.04, I managed to get everything working.
 
+For a static web page like this one, you need a git repository with all the needed material, such as template files and a configuration file, which together form all the needed pieces for Jekyll to create a website. When the necessary pieces for the site are in the repository, you can build the site with the following command:
+
+```
+bundle exec jekyll serve
+```
+
+and see your site in the server address described in the output.
