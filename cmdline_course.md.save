@@ -33,7 +33,7 @@ where example.sh is a script. Another topic of the week was process management i
 
 Lastly, we got to connect to a remote server using ssh, and copying files back and forth from our local server and the remote one, which, in our case, was Puhti. 
 
-One new thing for me week was reading about processes and how to manage them. It was also very important to get more practice with checking and changing permissions, even though I was sort of familiar with the topic already. Using ssh to connect to remote servers was also not a new thing for me, but rehearsing the process and commands was definitely useful.
+The new thing that I learned this week was reading about processes and how to manage them. It was also very important to get more practice with checking and changing permissions, even though I was sort of familiar with the topic already. Using ssh to connect to remote servers was also not a new thing for me, but rehearsing the process and commands was definitely useful.
 
 #### Week 3: Basic Corpus Processing
 
@@ -53,13 +53,7 @@ egrep "^[Cc]" word_list.txt | wc -l
 
 This spell counts the words that start with either upper or lower-case 'C' in a file called word_list.txt. The `wc -l` command counts the lines where a word that matches the regular expression `^[Cc]`.
 
-Most commands have several options that somehow alter the function of the command. Here are some possible options for the commands listed above:
-
-| **uniq** | -c counts occurrences                   | -i ignores case                                              | -u prints only unique lines              |
-| **sort** | -f ignores case                         | -b ignores leading blanks                                    | -n compares according to numerical value |
-| **tr**   | -d deletes characters in first argument | -t truncates first argument to the length of second argument | -c complement of first argument          |
-
-I also learned the basics of processing csv-files in the command line, such as combining several files while omitting unnecessary columns, and applying `egrep` commands to the produced files. 
+I also learned the basics or processing csv-files in the command line, such as combining several files while omitting unnecessary columns, and applying `egrep` commands to the produced files. 
 
 #### Week 4: Advanced Corpus Processing
 
@@ -79,8 +73,7 @@ diff file1 file2
 
 #### Week 5: Scripting and Configuration Files
 
-![mem](https://imgs.xkcd.com/comics/wanna_see_the_code.png)
-*Comic from [xkcd](https://xkcd.com/2138)*
+!https://imgs.xkcd.com/comics/wanna_see_the_code.png](mem)
 
 The goal of this week was to learn to write useful scripts and manipulate configuration files to make the command line environment more user-friendly. The idea behind script files is being able to combine several commands into one executable file. This can save a lot of time and effort when solving more complex tasks, which require several steps. Script files can take parameters that are given when executing the script. Let us look at the following script:
 
@@ -101,34 +94,10 @@ Here we have a script that adds all changes to git, creates a commit with a mess
 bash push.sh "Initial commit" "cmdline-course"
 ```
 
-This week, I found manipulating the .bashrc file to my liking extremely helpful. I was able to make my prompt look clean and appealing to the eye and determine several useful aliases, such as navigating to the directory of this course with the command `kik` and to the directory of this Github page with `io`. 
+This week, I found manipulating the .bashrc file to my liking to be extremely helpful. I was able to make my prompt look clean and appealing to the eye and determine several useful aliases, such as navigating to the directory of this course with the command `kik` and to the directory of this Github page with `io`. 
 
 #### Week 6: Installing and Running Programs
 
-On week 6 the goal was to get familiar with installing programs and Python packages in the command line and learn to write and use Makefiles.
-
-For my Ubuntu-environment, installing software is done using a package manager via the command `apt-get`. Package managers download all dependencies and packages needed for the software in question. For many installations, you will need to be the root user. Instead of actually logging in as the root user, it is recommended to execute such commands with `sudo`, which allows you to run commands as the root user from your current user. Installing a made-up software called `easyprogramming` as the root user in a Unix environment would look like this:
-
-```
-sudo apt-get install easyprogramming
-```
-
-Installing Python packages that do not come with the standard Python distribution is done using the command `pip`, which is a package manager for Python. Installing the helpful software NLTK (Natural Language Tool Kit) via pip looks like this:
-
-```
-pip install nltk
-```
-
-Lastly, I learned a completely new thing, which is the concept of Makefiles. I had never dealt with one before, and understanding the syntax took quite a bit of trial and error. Eventually, when I got the hang of it (somewhat), Makefiles seem a very helpful tool. The basic idea of Makefiles is that they are a type of file which can be executed with the program `make`. The file contains all necessary information for the `make`-program to create a working software or library. 
-
 #### Week 7: Git, Github, Version Control, and Jekyll
 
-For the final week, the theme was version control. I was already familiar with most of the topics this week, as I have used Git and Github before for my computer science studies. I had not, however, created a Github Pages website before, so it has been exciting to learn. For creating the site, we used the static site generator software Jekyll. Installing Jekyll and getting it to work how I wanted was quite a hassle, as it turned out my Ubuntu version (16.04) only supports ruby2.3, and what was needed is 2.5. After upgrading to Ubuntu 18.04, I managed to get everything working.
 
-For a static web page like this one, you need a git repository with all the needed material, such as template files and a configuration file, which together form all the needed pieces for Jekyll to create a website. When the necessary pieces for the site are in the repository, you can build the site with the following command:
-
-```
-bundle exec jekyll serve
-```
-
-and see your site in the server address described in the output.
