@@ -22,7 +22,7 @@ My email address is helmiina.hotti@helsinki.fi.
 [Programming for Linguists](https://studies.helsinki.fi/courses/cur/hy-opt-cur-2021-2b1a1c0f-9701-4397-9e19-ab80b0c87af4), spring 2020  
 [Mathematics for Linguists](https://studies.helsinki.fi/courses/cur/hy-opt-cur-2021-e7622986-09b2-4dee-a67e-ceec2009389d), spring 2020  
 [Introduction to University Mathematics](https://studies.helsinki.fi/courses/cur/hy-CUR-136253078), fall 2019  
-[Introduction to Databases](https://studies.helsinki.fi/courses/cur/hy-opt-cur-2021-b40260c0-b699-431b-8b16-c96f155df78a), fall 2019
+[Introduction to Databases](https://studies.helsinki.fi/courses/cur/hy-opt-cur-2021-b40260c0-b699-431b-8b16-c96f155df78a), fall 2019  
 [Academic Writing](https://studies.helsinki.fi/courses/cur/hy-opt-cur-2021-4e1ed8be-1168-412c-a83a-9e159c2b7cd3), fall 2019  
 [Introduction to Language Technology](https://studies.helsinki.fi/courses/cur/hy-opt-cur-2021-43b8f122-8ca2-453b-addd-cbfd756c3306), fall 2019  
 [Advanced Course in Programming](https://studies.helsinki.fi/courses/cur/hy-CUR-136380001), spring 2019  
