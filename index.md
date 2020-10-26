@@ -35,6 +35,9 @@ Basic Studies in English Philology (30 cr), fall 2018 - fall 2019
 
 ## Projects
 
+[Genre Classification with Vectors](https://github.com/helmiinah/genre-classification)  
+In this project I compare two approaches for the task of classifying documents into genres. One approach is an unsupervised machine learning method with a K-means clusterer and the other is supervised vector learning.
+
 [Command Line Course Corpus Project](https://github.com/helmiinah/cmdline-course)  
 With this small-scale corpus processing project you can
 * Arrange files to sentence-per-line format
