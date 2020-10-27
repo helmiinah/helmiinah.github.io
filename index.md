@@ -4,7 +4,7 @@ layout: default
 
 ## Introduction
 
-I'm a third-year undergraduate student at the University of Helsinki. As my major I study linguistics and specialize in language technology. As my minors I have studied English philology and computer science. I am currently working on my bachelor's thesis on gender bias in word embeddings, taking a special interest in the occurrence of gender bias in Reddit comments.
+I'm a third-year undergraduate student at the University of Helsinki. I'm majoring in linguistics and specialize in language technology. As my minors I have studied English philology and computer science. I am currently working on my bachelor's thesis on gender bias in word embeddings, taking a special interest in the occurrence of gender bias in Reddit comments.
 
 ## Find me on
 
