@@ -20,9 +20,9 @@ where 'file' is renamed 'new_file'. The goal was also to get comfortable with a 
 
 I was already familiar with most of the topics and commands learned this week, as I have used the command line environment before in my computer science studies. I think, however, that rehearsing the more simple things can be useful at times, and I definitely got more comfortable with the commands in this week's material. Getting more familiar with nano shortcuts was especially useful.
 
-#### Week 2: Basics of a UNIX System
+#### Week 2: Basics of the UNIX System
 
-The topic of the second week was to get some more practice with the basic UNIX commands, such as `ls` and `cp`. In addition, we learned what it means to check and change the permissions of a file using `chmod`. For example, denying the permission to execute a file from everyone, but giving everyone a permission to read the file, is done with the following commands:
+The topic of the second week was to get some more practice with the basic Unix commands, such as `ls` and `cp`. In addition, we learned what it means to check and change the permissions of a file using `chmod`. For example, denying the permission to execute a file from everyone, but giving everyone a permission to read the file, is done with the following commands:
 
 ```
 chmod a-x example.sh
@@ -31,9 +31,9 @@ chmod a+r example.sh
 
 where example.sh is a script. Another topic of the week was process management in Unix. I learned how to check currently running processes and terminate them.
 
-Lastly, we got to connect to a remote server using ssh, and copying files back and forth from our local server and the remote one, which, in our case, was Puhti. 
+Lastly, we got to connect to a remote server using ssh, and learned to copy files back and forth from our local server to the remote one, which, in our case, was Puhti. 
 
-One new thing for me week was reading about processes and how to manage them. It was also very important to get more practice with checking and changing permissions, even though I was sort of familiar with the topic already. Using ssh to connect to remote servers was also not a new thing for me, but rehearsing the process and commands was definitely useful.
+One of the most helpful things to me this week was reading about processes and how to manage them, as I was not very familiar with the topic before. It was also very important to get more practice with checking and changing permissions, even though I was sort of familiar with the topic already. Using ssh to connect to remote servers was also not a new thing for me, but rehearsing the process and commands was definitely useful.
 
 #### Week 3: Basic Corpus Processing
 
@@ -51,9 +51,9 @@ I also learned how to convert characters, such as newlines, to a Unix-format. Pr
 egrep "^[Cc]" word_list.txt | wc -l
 ```
 
-This spell counts the words that start with either upper or lower-case 'C' in a file called word_list.txt. The `wc -l` command counts the lines where a word that matches the regular expression `^[Cc]`.
+This spell counts the words that start with either upper or lower-case 'C' in a file called word_list.txt. The `wc -l` command counts the lines where a word that matches the regular expression `^[Cc]` occurs.
 
-Most commands have several options that somehow alter the function of the command. Here are some possible options for the commands listed above:
+Most commands have several options that somehow alter the function of the command. Here are some possible options for some of the commands listed above:
 
 | **uniq** | -c counts occurrences                   | -i ignores case                                              | -u prints only unique lines              |
 | **sort** | -f ignores case                         | -b ignores leading blanks                                    | -n compares according to numerical value |
